@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="First_project-class.main" target="1.8" />
       <module name="First_project-class.test" target="1.8" />
+      <module name="qa21.First_project-class.main" target="1.8" />
+      <module name="qa21.First_project-class.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
