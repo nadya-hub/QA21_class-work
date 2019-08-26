@@ -20,21 +20,16 @@ public class OpenGoogleTest extends TestBase {
 
     @Test
     public void searchJavaTest() throws InterruptedException {
-        driver.get("https://www.google.com");
-        driver.findElement(By.name("q")).click();
-        driver.findElement(By.name("q")).clear();
-        driver.findElement(By.name("q")).sendKeys("Java"+ Keys.ENTER);
-        Thread.sleep(6000);
-    }
-    @Test
-    public void clickSettings() throws InterruptedException {
-        driver.findElement(By.id("fsettl")).click();
+        openSite("https://www.google.com");
+        type(By.name("q"),"Java"+ Keys.ENTER);
+
         Thread.sleep(6000);
     }
 //    @Test
-//        public void clickImFillingLuke(){
-//        new Actions(driver).moveToElement(driver.findElement(By.name("btnI"))).click().perform();
-//       // driver.findElement(By.name("btnI")).click();
-//        }
+//    public void clickSettings() throws InterruptedException {
+//        click(By.id("fsettl"));
+//        Thread.sleep(6000);
+//    }
+
 
 }
